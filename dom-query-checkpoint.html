@@ -22,37 +22,45 @@
 
 	<script>
 
-			// //Iiffe Starts ***
+		 //Iiffe Starts ***
 		(function(){
-		// 	// This function gets the element id 'another' 
-		// 	//and changes its color
+			// This function gets the element id 'another' 
+			//and changes its color
 			function domQueryA(parameter){
 				var el = document.getElementById('another');
 				el.style.color = parameter;
 			}
-		// 	// This function gets the elemt by the class name 'hot'
-		// 	// it then changes the font size
+			// This function gets the elemt by the class name 'hot'
+		 	// it then changes the font size
 			function domQueryB(size){
 				var el = document.getElementsByClassName('hot');
 				el[0].style.fontSize = size;
 				el[1].style.fontSize = size;
 				
 			}
-		// 	//this function gets the element by tag name 'li'
-		// 	//it then changes the background color of the each
-		// 	//item in the array 
-
-		function domQueryC(){
- 			var el = document.getElementsByTagName('li');
-			el[0].style.backgroundColor ='lightgreen';
-			el[1].style.backgroundColor ='lightblue';
- 			el[2].style.backgroundColor ='pink';
- 			el[3].style.backgroundColor ='lightgrey';
- 			el[4].style.backgroundColor ='orange';
- 			el[5].style.backgroundColor ='yellow';
- 			el[6].style.backgroundColor ='slategrey';
-		}
 			
+			//this function gets the element by tag name 'li'
+			//it then changes the background color of the each
+			//item in the array 
+			function domQueryC(){
+	 			var el = document.getElementsByTagName('li');
+				el[0].style.backgroundColor ='lightgreen';
+				el[1].style.backgroundColor ='lightblue';
+	 			el[2].style.backgroundColor ='pink';
+	 			el[3].style.backgroundColor ='lightgrey';
+	 			el[4].style.backgroundColor ='orange';
+	 			el[5].style.backgroundColor ='yellow';
+	 			el[6].style.backgroundColor ='slategrey';
+			}
+
+			// function domQueryC(){
+			// 	var el = document.getElementsByTagName('li');
+			// 	for( i = 0, max=el.length; i < max; i++){
+			// 		el[i].style.backgroundColor = 'lightgreen';
+			// 	}
+
+			// }
+				
 		
 
 			//these invoke each function		
@@ -60,7 +68,7 @@
 			domQueryB('30px');
 			domQueryC();
 
-		})()
+		})() //Iiffe Ends ***
 
 
 
